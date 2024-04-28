@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" />
+  <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/libs/remixicon/fonts/remixicon.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Splash&display=swap" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+  rel="stylesheet" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+</head> -->
+
+<body>
+  <section class="nav-hero">
+    <!-- nav-start -->
+  <div class="main py-9 px-28 md-max:px-20 sm-max:px-5 flex justify-between ">
+    <div class="img-otr flex justify-center items-center">
+      <img src="./assets/img/Logop.png" class="pr-12 h-[40px] w-full " alt="">
+      <ul class="flex items-center lg-max:hidden">
+        <li class="li-item mr-7">
+          <a class="a-item  font-Inter font-normal" href="">Features</a>
+        </li>
+        <li class="li-item mr-7">
+          <a class="a-item  font-Inter font-normal" href="">Testimonials</a>
+        </li>
+        <li>
+          <a class="a-item font-Inter font-normal" href="">Pricing</a>
+        </li>
+      </ul>
+    </div>
+    <div class="btn-otr flex items-center ">
+      <div class="btn-inr mr-7  rounded-[50px] md-max:hidden">
+        <a class="a-btn px-4 py-3 font-Inter font-medium" href="">Sign in</a>
+      </div>
+      <div class="btn-inr rounded-[50px]">
+        <a class="a-btn px-4 py-3 font-Inter font-medium" href="">Get started <span class="sm-max:hidden"> today</span></a>
+      </div>
+      <div class="off-canvas hidden lg-max:flex">
+        <button
+        class="mr-1.5  px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal"
+        type="button"
+        data-te-offcanvas-toggle
+        data-te-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        <i class="ri-menu-fill text-3xl"></i>
+      </button>
+      
+      <div
+        class="invisible fixed bottom-0 right-0 top-0 z-[1045] flex w-96 max-w-full translate-x-full flex-col border-none bg-white bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out dark:bg-neutral-800 dark:text-neutral-200 [&[data-te-offcanvas-show]]:transform-none"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+        data-te-offcanvas-init>
+        <div class="flex items-center justify-between p-4">
+          <h5
+            class="mb-0 font-semibold leading-normal"
+            id="offcanvasRightLabel">
+            <div class="img-off-otr mt-5 ml-5">
+              <img src="./assets/img/Logo.svg" alt="">
+            </div>
+          </h5>
+          <button
+            type="button"
+            class="box-content rounded-none border-none opacity-50 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+            data-te-offcanvas-dismiss>
+            <span
+              class="w-[1em] focus:opacity-100 disabled:pointer-events-none disabled:select-none disabled:opacity-25 [&.disabled]:pointer-events-none [&.disabled]:select-none [&.disabled]:opacity-25">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="offcanvas-body flex-grow overflow-y-auto p-4 ml-5">
+          <ul class="flex flex-col items-start ">
+            <li class="li-item mb-4">
+              <a class="a-item-off  font-Inter font-normal" href="">Features</a>
+            </li>
+            <li class="li-item mb-4">
+              <a class="a-item-off  font-Inter font-normal" href="">Testimonials</a>
+            </li>
+            <li>
+              <a class="a-item-off font-Inter font-normal" href="">Pricing</a>
+            </li>
+          </ul>
+          <div class="btn-inr text-center mt-8  rounded-[50px] hidden md-max:flex">
+            <a class="a-btn px-4 py-3 font-Inter font-medium" href="">Sign in</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav end -->
+  <!-- hero start here -->
+  <section class="hero mt-[130px] mb-16 ">
+    <div class="container">
+      <div class="hero-text text-center mb-[156px] mx-[445px] xl-max:mx-[200px] lg-max:mx-[90px] xs-max:mx-[30px] xxs-max:mx-[10px]">
+        <h1 class="text-h1 hero-herding text-beta font-Lexend font-medium">Accounting 
+          <span class="hero-span text-Alpha relative z-10 ">made simple
+            <img class="marker absolute left-[-15px] lg-max:hidden top-[40px] z-[-1]" src="./assets/img/Marker 2.png" alt="">
+          </span>
+          for small businesses.</h1>
+          <p class="px-11 mt-5 mb-9 text-gama font-Inter font-normal">
+            Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.
+          </p>
+          <div class="btn-otr1 flex items-center justify-center">
+            <div class="btn-inr1 mr-7 xs-max:mr-4">
+              <a class="hero-btn px-4 py-3 font-Inter rounded-[50px] text-Gama border-[1px] font-medium" href="">
+                Get 6 months free
+              </a>
+            </div>
+            <div class="btn-inr1 ">
+              <a class="hero-btn px-4 py-3 font-Inter text-Gama rounded-[50px] border-[1px] font-medium flex items-center" href="">
+                <span>
+                  <img class="text-Alpha mr-3" src="./assets/img/Vector.svg" alt="">
+                </span>Watch video
+              </a>
+            </div>
+          </div>
+      </div>
+      <div class="trust ">
+        <p class="text-Beta items-center text-center font-medium mb-8">Trusted by these six companies so far</p>
+        <div class="grid grid-cols-12 items-center px-[140px] xl-max:px-[50px] sm-max:px-0 gap-8">
+          <div  class="col-span-2 lg-max:col-span-3 md-max:col-span-4 sm-max:col-span-6 flex justify-center">
+            <a href="">
+              <img class="hero-img" src="./assets/img/transistor.svg" alt="">
+            </a>
+          </div>
+          <div  class="col-span-2 lg-max:col-span-3 md-max:col-span-4 sm-max:col-span-6 flex justify-center">
+            <a href="">
+              <img class="hero-img" src="./assets/img/tuple.svg" alt="">
+            </a>
+          </div>
+          <div  class="col-span-2 lg-max:col-span-3 md-max:col-span-4 sm-max:col-span-6 flex justify-center">
+            <a href="">
+              <img class="hero-img" src="./assets/img/statickit.svg" alt="">
+            </a>
+          </div>
+          <div  class="col-span-2 lg-max:col-span-3 md-max:col-span-4 sm-max:col-span-6 flex justify-center">
+            <a href="">
+              <img class="hero-img" src="./assets/img/mirage.svg" alt="">
+            </a>
+          </div>
+          <div  class="col-span-2 lg-max:col-span-3 md-max:col-span-4 sm-max:col-span-6 flex justify-center">
+            <a href="">
+              <img class="hero-img" src="./assets/img/laravel.svg" alt="">
+            </a>
+          </div>
+          <div  class="col-span-2 lg-max:col-span-3 md-max:col-span-4 sm-max:col-span-6 flex justify-center">
+            <a href="">
+              <img class="hero-img" src="./assets/img/statamic.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- heri end here  -->
+  <!-- sec-2-start -->
+  <section class="section-2  relative overflow-hidden hidden">
+    <span class="absolute -z-10 left-0 right-0">
+      <img class="w-full h-auto" src="./assets/img/background.png" alt="">
+    </span>
+    <span class="absolute right-0 bottom-[117px]">
+      <img class="h-[732px]" src="./assets/img/Screenshot.png" alt="">
+    </span>
+    <div class="container">
+     <div class="wraper text-center">
+        <h2 class="text-h2 text-Light font-medium font-Lexend mt-28">Everything you need to run your books.</h2>
+        <p class="text-Light font-normal font-Inter mt-2 mb-16">Well everything you need if you aren’t that picky about minor details like tax compliance.</p>
+     </div>
+     <div class="grid  ml-[125px] mb-[244px] mt-[167px]">
+      <div class="tab-otr rounded-[10px] px-6 py-6">
+        <h5 class="text-medium text-Light">Payroll</h5>
+        <p class="text-xs text-Light">Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.</p>
+      </div>
+      <div class="tab-otr rounded-[10px] px-6 py-6">
+        <h5 class="text-medium text-Light">Payroll</h5>
+        <p class="text-xs text-Light">Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.</p>
+      </div>
+      <div class="tab-otr rounded-[10px] px-6 py-6">
+        <h5 class="text-medium text-Light">Payroll</h5>
+        <p class="text-xs text-Light">Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.</p>
+      </div>
+      <div class="tab-otr rounded-[10px] px-6 py-6">
+        <h5 class="text-medium text-Light">Payroll</h5>
+        <p class="text-xs text-Light">Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.</p>
+      </div>
+     
+     </div>
+    </div>
+  </section>
+  <!-- sec-2-end -->
+  <!-- section-3 -->
+
+  <section class="section-3 mb-[145px] ">
+    <div class="container">
+      <div class="wrapper text-center">
+        <h3 class="text-h3 text-beta mt-28">Simplify everyday business tasks.</h3>
+        <p class="text-Gray-Shade1 mb-16 mt-3">Because you’d probably be a little confused if we suggested you complicate your everyday business tasks instead.</p>
+      </div>
+      <div class="grid grid-cols-12 gap-8 mb-14 mx-36 xl-max:mx-16 sm-max:mx-0">
+        <div class="dox-otr1 col-span-4 lg-max:col-span-6 sm-max:col-span-12">
+          <div class="box-inr px-3 py-6">
+            <div class="icon-otr">
+              <i class="ri-bar-chart-box-line text-4xl icon-inr text-Gray-Shade2"></i>
+            </div>
+            <p class="text-Gray-Shade2 p-box pt-4 pb-1">Reporting</p>
+            <h5 class=" heading-box text-xl   font-normal mb-3">Stay on top of things with always up-to-date reporting features.</h5>
+            <p class="detail text-xs text-Gray-Shade1  font-normal">We talked about reporting in the
+               section above but we needed three items here, so mentioning it one more time for posterity.</p>
+          </div>
+        </div>
+        <div class="dox-otr1 col-span-4 lg-max:col-span-6 sm-max:col-span-12">
+          <div class="box-inr px-3 py-6">
+            <div class="icon-otr">
+              <i class="ri-bar-chart-box-line text-4xl icon-inr text-Gray-Shade2"></i>
+            </div>
+            <p class="text-Gray-Shade2 pt-4 p-box pb-1">Reporting</p>
+            <h5 class=" heading-box text-xl   font-normal mb-3">Stay on top of things with always up-to-date reporting features.</h5>
+            <p class="detail text-xs text-Gray-Shade1  font-normal">We talked about reporting in the
+               section above but we needed three items here, so mentioning it one more time for posterity.</p>
+          </div>
+        </div>
+        <div class="dox-otr1 col-span-4 lg-max:col-span-6 sm-max:col-span-12">
+          <div class="box-inr px-3 py-6">
+            <div class="icon-otr">
+              <i class="ri-bar-chart-box-line text-4xl icon-inr text-Gray-Shade2"></i>
+            </div>
+            <p class="text-Gray-Shade2 pt-4 p-box pb-1">Reporting</p>
+            <h5 class=" heading-box text-xl   font-normal mb-3">Stay on top of things with always up-to-date reporting features.</h5>
+            <p class="detail text-xs text-Gray-Shade1  font-normal">We talked about reporting in the
+               section above but we needed three items here, so mentioning it one more time for posterity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-detail mx-[124px] flex justify-center rounded-[30px] border-[1px] xl-max:mx-[60px] lg-max:hidden">
+        <div class="img-loss-otr px-14 py-14">
+          <img src="./assets/img/profit-loss.png" alt="" class="img-lode-inr">
+        </div>
+        <div class="img-loss-otr py-14">
+          <img src="./assets/img/inventory.png" alt="" class="img-lode-inr">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cta-start  uncomplete-->
+  <section class="CTA ">
+    <div class="container relative overflow-hidden">
+      <span class="absolute -z-10 left-0 right-0">
+        <img class="w-full h-[1711px]" src="./assets/img/background-features.png" alt="">
+      </span>
+      <div class="cta-inr items-center text-center pt-28 pb-32">
+      <h3 class="text-h3 text-Light font-normal ">Get started today</h3>
+        <p class="font-normal text-Light mt-1 mb-9 px-[490px] xl-max:px-[290px] lg-max:px-[170px] sm-max:px-0">It’s time to take control of your books. Buy our software so you can
+           feel like you’re doing something productive.</p>
+           <div class="btn-cta flex justify-center ">
+            <a class="hero-btn px-4 py-3 font-Inter bg-white rounded-[50px] text-Beta font-semibold" href="">
+              Get 6 months free
+            </a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- businesses -->
+
+ 
+
+  <section class="businesses mb-[116px] ">
+    <div class="container">
+      <div class="warpper text-center pt-[114px] ">
+        <h2 class="text-h2 text-Beta md-max:text-h3">Loved by businesses worldwide.</h2>
+        <p class="text-Gray-Shade1 pt-4 mb-16 px-[450px] xl-max:px-[250px] lg-max:px-[150px] sm-max:px-0">Our software is so simple that people can’t help but fall in love with it. Simplicity is easy when you just skip tons of mission-critical features.</p>
+      </div>
+      <div class="grid grid-cols-12 row-custom mx-[100px] xl-max:mx-0 gap-8 ">
+        <div class="col-span-4 lg-max:col-span-6 sm-max:col-span-12">
+            <div class="inr-business p-5  border-[1px] border-gray-400  rounded-[10px]">
+              <p class="">TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.
+                <span class="bottom-line h-[1px] grid w-full my-7"></span>
+              </p>
+              <div class="bus-del flex justify-between items-center">
+                <div class="text">
+                  <h4 class="text-h4">Sheryl Berge</h4>
+                <h4 class="text-h5 text-Gray-Shade2">CEO at Lynch LLC</h4>
+                </div>
+                <div class="img-otr">
+                  <img src="./assets/img/avatar-1.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 sm-max:col-span-12">
+          <div class="inr-business p-5  border-[1px] border-gray-400  rounded-[10px]">
+            <p class="">TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.
+              <span class="bottom-line h-[1px] grid w-full my-7"></span>
+            </p>
+            <div class="bus-del flex justify-between items-center">
+              <div class="text">
+                <h4 class="text-h4">Sheryl Berge</h4>
+              <h4 class="text-h5 text-Gray-Shade2">CEO at Lynch LLC</h4>
+              </div>
+              <div class="img-otr">
+                <img src="./assets/img/avatar-1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 sm-max:col-span-12">
+          <div class="inr-business p-5  border-[1px] border-gray-400  rounded-[10px]">
+            <p class="">TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.
+              <span class="bottom-line h-[1px] grid w-full my-7"></span>
+            </p>
+            <div class="bus-del flex justify-between items-center">
+              <div class="text">
+                <h4 class="text-h4">Sheryl Berge</h4>
+              <h4 class="text-h5 text-Gray-Shade2">CEO at Lynch LLC</h4>
+              </div>
+              <div class="img-otr">
+                <img src="./assets/img/avatar-1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 sm-max:col-span-12">
+            <div class="inr-business p-5  border-[1px] border-gray-400  rounded-[10px]">
+              <p class="">TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.
+                <span class="bottom-line h-[1px] grid w-full my-7"></span>
+              </p>
+              <div class="bus-del flex justify-between items-center">
+                <div class="text">
+                  <h4 class="text-h4">Sheryl Berge</h4>
+                <h4 class="text-h5 text-Gray-Shade2">CEO at Lynch LLC</h4>
+                </div>
+                <div class="img-otr">
+                  <img src="./assets/img/avatar-1.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 sm-max:col-span-12">
+            <div class="inr-business p-5  border-[1px] border-gray-400  rounded-[10px]">
+              <p class="">TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.
+                <span class="bottom-line h-[1px] grid w-full my-7"></span>
+              </p>
+              <div class="bus-del flex justify-between items-center">
+                <div class="text">
+                  <h4 class="text-h4">Sheryl Berge</h4>
+                <h4 class="text-h5 text-Gray-Shade2">CEO at Lynch LLC</h4>
+                </div>
+                <div class="img-otr">
+                  <img src="./assets/img/avatar-1.png" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 sm-max:col-span-12">
+          <div class="inr-business p-5  border-[1px] border-gray-400  rounded-[10px]">
+            <p class="">TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.
+              <span class="bottom-line h-[1px] grid w-full my-7"></span>
+            </p>
+            <div class="bus-del flex justify-between items-center">
+              <div class="text">
+                <h4 class="text-h4">Sheryl Berge</h4>
+              <h4 class="text-h5 text-Gray-Shade2">CEO at Lynch LLC</h4>
+              </div>
+              <div class="img-otr">
+                <img src="./assets/img/avatar-1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<!-- bus end -->
+  <section class="prices bg-[#10172A] ">
+    <div class="container">
+      <div class="warpper text-center pt-[114px] sm-max:text-start">
+        <h2 class="text-h2 text-Light relative z-0 text-center">
+          <span class="relative z-0">Simple pricing,
+            <span class="absolute left-0 bottom-0 -z-[1]">
+              <img src="./assets/img/mark.png" alt="">
+            </span>
+          </span> 
+           for everyone.
+        </h2>
+        <p class="text-Light pt-4 mb-16 px-[450px] xl-max:px-[200px] lg-max:px-[100px] sm-max:px-0 opacity-50">It doesn’t matter what size your business is, our software won’t work well for you.</p>
+      </div>
+      <div class="grid grid-cols-12 row-custom mx-[100px] xl-max:mx-[50px] sm-max:mx-0 gap-8 pb-[112px]">
+        <div class="col-span-4 lg-max:col-span-6 md-max:col-span-12">
+          <div class="price-inr p-7  rounded-[20px]">
+            <h2 class="text-5xl text-Light">$9</h2>
+          <h3 class="text-lg text-Light pt-6 pb-3">Starter</h3>
+          <h4 class="text-Light opacity-60">Good for anyone who is self-employed and just getting started.</h4>
+          <div class="btn-otr5 flex justify-center items-center mt-7 mb-8">
+            <a href="" class="btn-inr5 px-6 py-3 text-Light text-sm border border-[rgba(255, 255, 255, 0.20)] text-center rounded-[50px] w-full">Get started</a>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 md-max:col-span-12">
+          <div class="price-inr p-7  rounded-[20px]">
+            <h2 class="text-5xl text-Light">$9</h2>
+          <h3 class="text-lg text-Light pt-6 pb-3">Starter</h3>
+          <h4 class="text-Light opacity-60">Good for anyone who is self-employed and just getting started.</h4>
+          <div class="btn-otr5 flex justify-center items-center mt-7 mb-8">
+            <a href="" class="btn-inr5 px-6 py-3 text-Light text-sm border border-[rgba(255, 255, 255, 0.20)] text-center rounded-[50px] w-full">Get started</a>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 md-max:col-span-12">
+          <div class="price-inr p-7  rounded-[20px]">
+            <h2 class="text-5xl text-Light">$9</h2>
+          <h3 class="text-lg text-Light pt-6 pb-3">Starter</h3>
+          <h4 class="text-Light opacity-60">Good for anyone who is self-employed and just getting started.</h4>
+          <div class="btn-otr5 flex justify-center items-center mt-7 mb-8">
+            <a href="" class="btn-inr5 px-6 py-3 text-Light text-sm border border-[rgba(255, 255, 255, 0.20)] text-center rounded-[50px] w-full">Get started</a>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          <div class="circle flex justify-start pb-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12L11 14L15 10M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="text-sm text-Light pl-2">Send 10 quotes and invoices</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="questions relative overflow-hidden  ">
+    <span class="absolute -z-10 left-0 right-0 w-full">
+      <img class="w-full h-[2011px] sm-max:h-[2211px]" src="./assets/img/background-faqs.png" alt="">
+    </span>
+    <div class="container px-[100px] md-max:px-[50px] sm-max:px-5">
+      <div class="warpper text-start pt-[114px] sm-max:pt-[84px]">
+        <h2 class="text-h2 text-Beta">Frequently asked questions</h2>
+        <p class="text-Gray-Shade1 pt-2 mb-16 mr-[750px] xl-max:mr-[500px] lg-max:mr-[250px] sm-max:mr-0">If you can’t find what you’re looking for, email our support team and if you’re lucky someone will get back to you.</p>
+      </div>
+      <div class="grid grid-cols-12 row-custom mb-[180px] sm-max:mb-[144px] gap-9">
+        <div class="col-span-4 lg-max:col-span-6 md-max:col-span-12">
+          <h3 class="text-h4">Does TaxPal handle VAT?</h3>
+          <p class="text-Gray-Shade4">Well no, but if you move your company offshore you can probably ignore it.</p>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 md-max:col-span-12">
+          <h3 class="text-h4">What was that testimonial about tax fraud all about?</h3>
+          <p class="text-Gray-Shade4">TaxPal is just a software application, ultimately your books are your responsibility.</p>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 md-max:col-span-12">
+          <h3 class="text-h4">How do you generate reports?</h3>
+          <p class="text-Gray-Shade4">You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.</p>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 md-max:col-span-12">
+          <h3 class="text-h4">Does TaxPal handle VAT?</h3>
+          <p class="text-Gray-Shade4">Well no, but if you move your company offshore you can probably ignore it.</p>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 md-max:col-span-12">
+          <h3 class="text-h4">What was that testimonial about tax fraud all about?</h3>
+          <p class="text-Gray-Shade4">TaxPal is just a software application, ultimately your books are your responsibility.</p>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 md-max:col-span-12">
+          <h3 class="text-h4">How do you generate reports?</h3>
+          <p class="text-Gray-Shade4">You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.</p>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 md-max:col-span-12">
+          <h3 class="text-h4">Does TaxPal handle VAT?</h3>
+          <p class="text-Gray-Shade4">Well no, but if you move your company offshore you can probably ignore it.</p>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 md-max:col-span-12">
+          <h3 class="text-h4">What was that testimonial about tax fraud all about?</h3>
+          <p class="text-Gray-Shade4">TaxPal is just a software application, ultimately your books are your responsibility.</p>
+        </div>
+        <div class="col-span-4 lg-max:col-span-6 md-max:col-span-12">
+          <h3 class="text-h4">How do you generate reports?</h3>
+          <p class="text-Gray-Shade4">You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.</p>
+        </div>
+      </div>
+      <section class="footer">
+        <div class="footer-inr grid justify-center items-center">
+          <div class="logo-footer-otr grid justify-center">
+            <img src="./assets/img/Logo.svg" alt="" class="logo-inr">
+          </div>
+          <ul class="flex mt-[41px] mb-[57px]">
+            <li class=""><a href="" class="">Features</a></li>
+            <li class="mx-[37px]"><a href="" class="">Testimonials</a></li>
+            <li class=""><a href="" class="">Pricing</a></li>
+          </ul>
+        </div>
+        <span class="footer-span h-[1px] grid w-full my-7 sm-max:hidden"></span>
+        <div class="copy-sec flex justify-between mb-[80px] sm-max:flex-col-reverse sm-max:items-center">
+          <p class="text-Gray-Shade2">Copyright © 2022 TaxPal. All rights reserved.</p>
+          <ul class="flex">
+            <li class="">
+              <a href="">
+                <i class="ri-twitter-fill text-Gray-Shade2 h-5 pr-3 text-3xl"></i>
+              </a>
+            </li>
+            <li class="">
+              <a href="">
+                <i class="ri-github-fill text-Gray-Shade2 h-5 text-3xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    
+  </section>
+
+
+
+
+
+
+  <section class="hero hidden">
+    <div class="container">
+      <div class="grid grid-cols-12">
+        <div class="col-span-6">
+          <h1 class="text-h1">Loremip sumdolor.</h1>
+          <p class="text-inherit">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quam nam voluptas tempore praesentium iste sint error natus odit temporibus? Omnis reiciendis id quod amet molestiae illo magni, tenetur ratione sapiente modi totam, dolorem quas laborum repudiandae minus corporis et porro deserunt dignissimos a optio.</p>
+        </div>
+        <div class="col-span-6">
+          <img src="assets/img/hero-img.png" class="h-[256px]" alt="hero-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==================================
+          team-member start Here
+  ===================================-->
+
+  <section class="box mt-6 hidden" id="">
+    <div class="container">
+     
+      <div class="grid grid-cols-3 gap-6">
+        <div class="dox-otr1">
+          <div class="box-inr px-3 py-6 text-center border-slate-900 border">
+            <h5 class=" heading-box text-h5   font-medium">Richard C. Harrison</h5>
+            <p class="detail text-medium  font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum totam consectetur enim nemo consequatur qui, cum officia, quis natus quos consequuntur sint. Expedita, aspernatur ex.</p>
+          </div>
+        </div>
+        <div class="dox-otr1">
+          <div class="box-inr px-3 py-6 text-center border-slate-900 border">
+            <h5 class=" heading-box text-h5   font-medium">Richard C. Harrison</h5>
+            <p class="detail text-medium  font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum totam consectetur enim nemo consequatur qui, cum officia, quis natus quos consequuntur sint. Expedita, aspernatur ex.</p>
+          </div>
+        </div>
+        <div class="dox-otr1">
+          <div class="box-inr px-3 py-6 text-center border-slate-900 border">
+            <h5 class=" heading-box text-h5   font-medium">Richard C. Harrison</h5>
+            <p class="detail text-medium  font-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum totam consectetur enim nemo consequatur qui, cum officia, quis natus quos consequuntur sint. Expedita, aspernatur ex.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--==================================
+          team-member end Here
+  ===================================-->
+
+  
+
+
+    <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <script src="assets/js/app.js"></script>
+
+  <!-- <script src="https://cdn.tailwindcss.com/3.3.0"></script> -->
+<!-- <script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+        body: ["Roboto", "sans-serif"],
+        mono: ["ui-monospace", "monospace"],
+      },
+    },
+    corePlugins: {
+      preflight: false,
+    },
+  };
+</script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+ 
+<!-- <script>
+  // Initialization for ES Users
+import {
+  Offcanvas,
+  Ripple,
+  initTE,
+} from "tw-elements";
+
+initTE({ Offcanvas, Ripple });
+</script> -->
+</body>
+
+</html>
